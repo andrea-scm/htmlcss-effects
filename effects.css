@@ -1,0 +1,201 @@
+.ex-1-square{
+  transition: 2s;
+}
+
+.ex-1-square:hover{
+  background-color: red;
+}
+
+.ex-2-square{
+  transition: 3s;
+}
+
+.ex-2-square:active{
+  width: 100%;
+}
+
+.ex-3-square{
+  transition: 1.5s;
+}
+
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+
+.ex-4-square{
+  transition: 2s;
+}
+
+.ex-4-square:hover{
+  opacity: 0;
+}
+
+.ex-5-square{
+  transition: 2s;
+}
+
+.ex-5-square:hover{
+  transform: scale(2);
+}
+
+.ex-5-square:active{
+  transform: scale(.5);
+}
+
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+
+.ex-7-img{
+  transition: 1.5s;
+}
+
+.ex-7-img:hover{
+  filter: grayscale(1);
+  filter: sepia(.7);
+}
+
+.ex-8-img{
+  transition: 2s;
+}
+
+.ex-8-img:hover{
+  filter: grayscale(1);
+  filter: sepia(.7);
+  border-radius: 25px;
+}
+
+.ex-9-img{
+  transition: 2s;
+}
+
+.ex-9-img:hover{
+  filter: grayscale(1);
+  filter: sepia(.7);
+  border-radius: 25px;
+  transform: scale(1.5);
+}
+
+.ex-10-icon{
+    animation: rotation 1s linear infinite ;
+}
+
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.ex-11-icon:hover{
+  animation: rotation-2 2s cubic-bezier(0, 0, .6, 0.1) 1 alternate;
+}
+
+@keyframes rotation-2{
+  0%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(330deg);
+  }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+  animation: left-to-right 2s linear 1;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: right-to-left 2s linear 1;
+}
+
+@keyframes left-to-right {
+  0%{
+    left: 10%;
+  }
+  50%{
+    left: 70%;
+  }
+  100%{
+    left: 10%;
+  }
+}
+
+@keyframes right-to-left {
+  0%{
+    right: 20%;
+  }
+  50%{
+    right: 60%;
+  }
+  100%{
+    right: 20%;
+  }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+  animation: top-whole-turn 2s linear 1;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: bottom-whole-turn 2s linear 1;
+}
+
+@keyframes top-whole-turn {
+  0%{
+    left: 10%;
+    top: -10px
+  }
+  16%{
+    left: 80%;
+    top: -10px;
+  }
+  32%{
+    left: 80%;
+    top: 100%;
+  }
+  64%{
+    left: 0;
+    top: 100%;
+  }
+
+  80%{
+    left: -10px;
+    top: -10px;
+  }
+
+  100%{
+    left: 10%;
+    top: -10px;
+  }
+}
+
+@keyframes bottom-whole-turn {
+  0%{
+    right: 20%;
+    bottom: -10px
+  }
+  16%{
+    right: 80%;
+    bottom: -10px;
+  }
+  32%{
+    right: 80%;
+    bottom: 100%;
+  }
+  64%{
+    right: 0;
+    bottom: 100%;
+  }
+
+  80%{
+    right: -10px;
+    bottom: -15px;
+  }
+
+  100%{
+    right: 20%;
+    bottom: -10px;
+  }
+}
